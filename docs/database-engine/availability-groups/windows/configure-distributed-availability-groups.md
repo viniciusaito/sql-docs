@@ -208,7 +208,7 @@ ALTER DATABASE [db1] SET HADR AVAILABILITY GROUP = [ag2];
 
 Only manual failover is supported at this time. To manually fail over a distributed availability group:
 
-1. To ensure that no data is lost, set the distributed availability group to synchronous commita.
+1. To ensure that no data is lost, set the distributed availability group to synchronous commit.
 1. Wait until the distributed availability group is synchronized.
 1. On the global primary replica, set the distributed availability group role to `SECONDARY`.
 1. Test failover readiness.
